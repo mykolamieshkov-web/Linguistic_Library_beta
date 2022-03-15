@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Linguistic_Library</title>
+</head>
+<style>
+    body {
+        zoom: auto;
+        size: 85%;
+    }
+</style>
+<script type="text/javascript" src="script.js"></script>
+<body>
+  <hr id="shapka">
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <img id="logotip" src="img/logo_nbg.png" alt="логотип">
+        <a id="sectionname" href="index.html"> <img id="icon"  src="https://cdn-icons.flaticon.com/png/512/3339/premium/3339472.png?token=exp=1646746020~hmac=e1e7177b48914a183d514c258c0d1a87"> Головна</a>
+        <br>
+        <a id="sectionname" href="phonetic.html"> <img id="icon" src="img/voice_icon.png"> I_Фонетика</a>
+        <br>
+        <a id="sectionname" href="grammar.html"> <img id="icon" src="img/grammar_icon.png"> II_Граматика</a>
+        <br>
+        <a id="sectionname" href="semantic.html"> <img id="icon" src="img/Semantic_icon.png"> III_Семантика</a>
+        <br>
+        <a id="sectionname" href="syntax.html"> <img id="icon" src="img/Syntax_icon.png"> IV_Синтаксис</a>
+        <br>
+        <a id="sectionname" href="text.html"> <img id="icon" src="img/Text_icon.png"> V_Текст</a>
+      </div>
+      <span style="font-size:55px;cursor:pointer; color: gold;" onclick="openNav()">&#9776; </span>
+      <div><input type="text" class="live-search-box" placeholder="search here" />
+        <li></li>
+        <li> <a href="#rusanivskyi">Pусанівський В.М. </li> </a>
+        <li><a href="#vihovanec"> Вихованець І. Р.</li> </a>
+        <li><a href="#horpinich"> Горпинич В.О. </li> </a>
+        <li><a href="#zagnitko">Загнітко А.П. </li> </a>
+        <li><a href="#plush">Плющ М.Я.</li> </a>
+        </ul>
+      </div>
+      <h4 id="zagolovok"> Розділ II: Граматика української мови <img id="titleimg" src="img/grammar_icon.png"></h4> 
+      <div id="slider">
+        <figure>
+        <img src="https://images2.minutemediacdn.com/image/upload/c_crop,h_1160,w_2064,x_0,y_146/v1554699194/shape/mentalfloss/68490-istock-693937658.jpg?itok=2ivlUjga" alt="Первый слайд">
+        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxETEhUSExIVFhUXGBoZGRgXGR0gGhoiIBsiHh4YHx8fISggGBolHxoZITIhJikrLi4wHh8zODMtNygtLisBCgoKDg0OGxAQGzImICYtLi0vLS8vLTUtLS0tLy4tLS0tLS8tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIALABHgMBIgACEQEDEQH/xAAcAAACAgMBAQAAAAAAAAAAAAAABgUHAwQIAQL/xABMEAACAQMCAwYCBgYECwgDAAABAgMABBESIQUTMQYHIkFRYTJxFCNzgZGhNUJScrGyFTOzwQglNENTYoKDktHhJER0k8LD8PEWF6L/xAAaAQEAAwEBAQAAAAAAAAAAAAAAAQMEAgUG/8QAOREAAQMCBAMGBAUCBwEAAAAAAQACEQMhBBIxQVFhgRNxkaGx8AUiMsEUUtHh8SOCJDNCcpKismL/2gAMAwEAAhEDEQA/ALxooooiKKKKIiiiiiIooooiKKKKIioi949BFcQ2rsRLPqMY0kg6Rk5PQVL0i9q+Kzx8TsoUfSkkdwWXA3Kxkg5IyNwOlQTC7Y3MY5HyEp5zSrd9ubaO5e2KTsY9IkkSMtHGWGQGI3Hzxj86r627QcTFja37XrNquRFy9CYZdTZLnGSTpxtjAx571I9n7WZeI8WcXMgMQDN4U+tyj6Q222nyxj3rnPMQr/w+XMXGY9ZA4c1ZPAeMQ3cCXEJJjfOCQQdiVOx9waxdoOPW9miPOxVXkWNcKT4jkjp5YBNVhwfj/EJhwuJLoxtcpcCRtCEeGRwGC4xqCrt5ZxnNfNx2lvUgkja5Z2h4msAkZU1MmH2O2OqA56j1pnshw0Pg+E3iY4K3PpsWp05iF0Gp0BBZQdwSo3AP51r9n+NwXkIngYtGSQCQQcg4OxpB4JaTf01xFvpMg5YjY7L9YCmVQ7bKuQBjB23zUfwftLerbcNu3nJie5eGcaVAIZyFbYbYGo7Y6CmdcmhwPDzE/srhzRmqo4p2rvBbPPHKwFzfGCAqoYxxKSupFx4nYg7HPtWez4pxRUvY4hdSBYg9vLcwFJNWQHTdQHOCSox5Uzhc9iYkke/fqrQr2q47uOOyzTPE948uIlZ4p00TRyZw2MLhot/XI8OwzvY9dAyJXD2FhgooooqVwiiiiiIooooiKKKKIiiiiiIooooiKKKKIivM1D9qeNpZ2sly4zoGy/tMThV9skjfyGTXOvGu0l9fy+OWRy5AWNM6NzsqoOp8vMn1NFpw+GdWk6Abrp36THnGtc/MVq8X4rDbRNNPIERepP5AAbsT6Deuen7teKhOZ9FPrgOhb/hDZPyG9Lc1xLp5TM+lTnQxOlT0zpOwPUVErQzANfpUB4x/Kv7h3erw2WQR65I8nAaRMIfvBOn5nAp1edB1ZR8yKpHhPdjFeW9vc2t0VVweaJVBKsNmChcZwwIwfLBzWh3vWHImtIC5fl2kaa2G7YdwCaLk4ek+oGU3HeZGkeCv6OZW+FgfkQa+yw6ZGa5c7N9pZrITmAhWlQJq/Y8WdQHQtjIGemaip7uR3Mju7OTkszEt88nfNJXY+GuJMut3a+a66rzNV93NcXuZ7RxOWdY30xyMcswxkqSd207b++PKkjvY7aSzXElnC5WCI6H0nHMb9bUR1UHw6emQSc7YSszMK51U0+GpVu3XauwjYq93ArDqOYuR8wDtUNcx2N9eW9zFexM8CyKI0ZSW1qVz1yMZ9KorhHZu9uRqgt5JFH6wHh+Wo4BPtmtLiFjNBIY5kZHXGVYYI9D8vcUN1sbgWAw19+nor+//AF6n0GGx+kNpim5wfQMndjpxnYeLr7VJW3ZhIpr6czH/ALYACCAAmFK7HO/xUo9zfa+WfXZzuXZF1xuxyxUEBlJ88ZGCd8E+lTXfT+jH+0i/mqIGqyObUFXsnHU+p18l5wbsXDA9ky3Wo2glVRhfHzGY777Y1+XpWPiPYGHRMXuyiyXguyzBQFPi8GScY8fX2qh+F3Iimil/YkR9uvhYH+6pvit9xDis7ScuWbByI41ZkjHkABsu3mdzUZRwWt2FqB8l9uPUn91cdrwW1mv5Ly34gCZAOZFE6EMVXQMkHVp8yvmfOs0fYOIcNPDTKzKSWEmkagdesHGfu69K54VnifILK6N1GVZSPzUg088b7zrqazht0Zkk0kTSrsz74ULj4cjBYjzOBgVMBQ/B1QW5HTp0jTvVj8a4Pw76HDYyXkcLW+gxvzEV1dR8eknzySR7192nZBJ4ZzPevdNcIqc1dChQh1LoC5UENvnzx880JfcJuYVWSaGWNX+FnRlDefUjc+dT/dp2iktLyIBjypXWORPI6jgPj1UkHPpkedICl2FcKZLHzvt32KufgnZY29ybu4vHuJeWIVZ1RAq5zg4+Jvc+9My3UZ2DqT+8KSe+r9GN9rH/ADVQvCbrkzwzddEiPgdTpYNj8qaaLPSwzq7C/Ny0/cei6wubhEUs7qijqWIA/E1r2XGLaYlYriKQjqEdWI+4GuceKXvEOKTNJy5ZSDskasyRDyAAGB8zuagUeSJ8gsjoeoyrKR+akGplWt+HyLuvw4ffyXXdRt3x20ibTJcwo3o0ig/gTVH8e7zLqe0ht0Zo5NJE0i7M5zgBSPhBGC2OpOOnVOv+EXMKq80Msav8LOjKG8/MbnzpK5p4An6zHJdWW1wjqGR1dT0ZSCD942rPXNvdl2hktb2NQx5czrHIn6p1HCtjyIJG/pkV0Te3SRRvK5wiKWY+gAyT+AqVmxFA0XZdV9zTKilmYKo6liAB8yelQrds+Gg4N7b5+0U/wrn3tf2quL6ZnkYhATy48+FB5bdC2OrefywB5bdjuJSJzEtJimM504JHqAcE/cKiVrbgGtANR0eH3XSthxW3nGYZo5R6xuG/gdq3q5GtrmWGQPGzo6HYqSGBHl/0ro3u47Sm+s1kfHNRjHJjoSACG9tQIPzzUqnE4Q0RmBkJnkmRfiZR8yBRHOjbKyn5EGqY7/8A+vtfs5P5hSH2Y7Qy2TySwgCR42jDEfDllOrHmRp2B2zj5VEqaeCL6YeD06xrP2XUpceor7rka8vZJXMkju7ncszEt+Jq6u5Xi1zPBMkxZ44mURyMSTkglkydyANJ9tWPTCUr4J1JmeZWTv2kIsYgOhuFz/5bkVXPdJGrcUt9XlzCPmI2xV2d4HZ83tlJAuOYMPHnpqXoPbIJXPvXOvDb2ayuklVdMsLnKsPMZDKw+WQaLRgyH4d1Ma3811dXM3eZEq8TuwowNYO3qUVj+ZNPr99icva0bmY6GQaM/PTkj7qqjiF3LczvK+WklckhR1LHZVHX2A+VEwWHqU3lzxFoV29xTseHyA9BcOB/wIT+ZNKHf1/lsP8A4df7R6s/u84C1lYxQv8A1hy8nszHOPfAwv3VWHfz/lsP2C/2j0VVBwdiyRzSt2D4Ct7eRwOcLu746lV3Kj0J2GfLJNdFP2ftDD9HNvFycY0aBj/offrVIdyn6TX7OT+AroSgUfEHO7WNgFHcE4VFawR28QwiDA9Tvkk+pJJJqsL7uZZ5Gk+m51sWbMWDucnfWd9z5VbksgUFicADJJ6ADqaoHtv3lXNy7R20jQwA4Gg6XcftMw3AP7Ixt1zQqvC9s5x7MxxNldZu7OzjWNpYYURQqqzquAB7mqa75uK2lzNbvbyxykI6uUOfMFRnz6tS72b7HX1/l4Y/BnBkkOEz579WPyBrJ217HScO5IklR2kDHCA4XTjzPXOr0HSkrXQw9OlVHzy7gtzuhlI4pAB+sJAf/LY/xAq0++f9GP8AaR/zVVPdJ+lbf/ef2TVa3fP+jH+0j/modFziR/i2dPVc9Rrkgeu1dUdmOBxWVulvGNlHibzdvNz6kn8BgeVctW3xL+8P4115Up8TJho71zJ3kjHE7vH+k/ioNM3cn2einnluZQG+j6NCnpqbPjPuoXb3OfIUtd5f6Uu/tB/KtP3+D/8ABefvRfweoCurkjC24D7KZ78B/i0e06fwaqL4Wfrov30/mFXr34fo3/fJ/Bqorhf9dF+8n8woowP+Qeqvzvp/Rj/aR/xrnyJCSAOpIFdB99P6Mf7SP+Nc/wBn8afvL/GifDv8o95+y6l7NcEis7dLeIbKN282bzc+pJ/5eVc8946gcTugB/nSfxAJ/Ouna5j7yf0pd/af+kUWb4cSarieH3Cae5Ls9FNNJdSANyNIjU9NTZ8fzAG3uc+Qpu78VH9HKfSdMf8AC1RXcB/VXf78f8GqX78P0cPt0/g1NkqEnGCdiFRvBj/2iH7SP+cV0/2l4Wbq2ltxJy+aunXjOBkZ2yM5GR1865f4L/lEP2kf84rp7tPxyOytpLiTJC9FHVmJwqj5nz8hk+VFZ8QBzsjX90h9nO6MW10k8twssaHVoMenJA8JPiIwDg/dT7fdpLKHaW6gQ+jSLn8M5rnjtL20vb1jzZmWM9I0JWMD0IHx/Ns/dUl2f7suIXKq+lYo23BlOCR6hQC344ooqYYuh+IfHv3oFEduriGS/uZIGVo3fUrL0OVBY/8AFqqxu4CQ6LxfINER8yHB/lFVd2k4ObS5ltmcOYyAWAwDlQ3Tf1xVnf4P3/ffnB/7lAr8SB+GtpA+y0+//wDr7X7OT+YUhdkODC8vILYtpEjHUfPSqlmx74Uge9Pvf9/X2v2cn8wpZ7pP0ta/KT+xeimgS3CyNgfur8h7P2iw/RxbxcnGNGkYPz9T7neveA8FhtIVghUhAWO5yck5OT59cfICpWipXiyYhLHeNxKS34fcTREhwqqCOq6mClh7gMTXPPZ+6tknD3cLTREMGVWKtk9GByMkemRXUPEreKSJ45gpiZSHDdMY3yfL51zf2z4TYQSEWd3zxn4dOQv+2PC/3CoK9LAPaQad5O4n1GibLCx7Ly/56aI/syM649s4I/8A6qxeyXAOFRfW2awuf9Ir8xh/tEnT8hiqDg7JcQaLmraTsh6EIcn3A+Ij3xio+KWa3kyplikX0yrj28iPlUWVz8N2gIbUPdMrraqK7+v8th/8Ov8AaPTd3VduXvdVtcEGZF1K4GOYoIByBsGBI6dQfY0r9+NpK95CUjdgIBuqkj439BUrJhmGniMrufoovuT/AEmPs5P4CuhKoLucspU4iC8UijlybsrAdB5kVftAucef63QJf7eORw68K9eRJ/Kc/lmuXvOuuL61SWN4nGUdWRh6hhg/ka5m7V9lbmxlZZUYpnwSAHQ48jnoG9VO4/A0Wj4bUAlp1suhexhi+gWvKI5fJTGP3fFn3znPvmqg76OPQXNxFFCwfkK4dlOV1MR4QfPGnf3OPI1XyTOAUV3APVQTg/d5089ku7O6u43lkBhXQ3LDjBd8eHIIyI/fz8qTK7bh2Yd/aPd3dfVaXdJ+lbf/AHn9k1Wt3z/ox/tI/wCaqRm4Nf20n9RPFIh2ZVcEH1Vl6/MGrs714HbhRUKztqi2AJJwdz60JXOJAOIpvBsY8j+65/tviX5j+NdeVydBwy41L9RL1H+bb1+VdY1K5+JH6eq5l7y/0pd/aD+Vafv8H/4Lz96L+D0ld43D5m4ldMsMjAybEIxB8I8wKeu4i2kRLvWjplosalIzs/r1qAVbiCPwvRv2Ur34fo3/AHyfwaqK4X/XRfvJ/MKvnvphd+HaUVmPOTZQSejeQqkOHcMnEsZMEvxr+o37Q9qKcCQKB7yry76f0Y/2kf8ANXP9p8afvL/Gug++KFn4c6orMeZHsoJPX0FUPacMuNa/US/EP823r8qgp8PI7I959F1jXMfeT+lLv7T/ANIrpyubO8Xh8zcSuWWGQgybEIxB8I8wKkrL8OMVD3fcJ57gP6q7/fj/AINUv34fo4fbp/Bqje4i2kSO61oy5ePGpSM7N61K99ULvw8BFZjzk2UEno3kKbI8/wCM6j0VFcG/yiH7SP8AnFXL39M30SADoZ9/uRsfxNVLwnhs4nhJhlA5ifqN+0PauhO3/Zz6daPApAkBDxk9NQ8j6Aglc+WaarRi3tbWpuOy567I8r6bbc7HL5serPTGodfbOM+1dRXd3HEhkkdURRksxAAHrk1ylxLhs1u5jmjeNx5OMfePJh7jIr4j50pWJdbn9VBqY/coz+VJVuJwvbEOzQI97qT7acUS6vbiePOh38OepAAUHHlnTnHvVjf4P3/ffnB/7lQEvdXdix+kaSbjUDyRjITH5yZwdPpt12rW7srO7i4lCpSeJSzcwaXVSAjEBxsCM+RpMLmqadSg5rDp9lOd/wB/X2v2cn8wpZ7pf0ta/wC9/sXps79bSR5rbRG7YjfOlSceIegpb7rLCZeKW7NFIoHMySjAD6t/MiiikR+EP+133XRVFFFSvGVH99/H5TcLZqxWJEV3A/XY5Iz6gDGB6k+2NfuS4TBNcTPKqu8Sq0atuMknL48yuFHtq+VNPen2Bmu2F1bYMoUK8ZONYGcFSdtW+MHGRjfbepX4bf2cmsxTwsvRgrrj5MNiPkahevRyVMP2bHQfuuqKrbvvt7f6EsjhecJFETfrb/EvqV05OOmcVWUfb3i3wi7lP3KT+a5rGeE8Xv5AzRXErdA0gYKB6Bmwqj2FFVTwbqTw97gAPe8KR7m1b+k4sdAkhb5aD/eVromkLu07CfQA00zK1xINPh+FFznSD5kkAk+wA6ZL7RZ8ZVbUqS3TRQN72ts4pDE8pDKQGIViqk+TMBgGs3Fe0dtbsqSudTDICqWOP2jpBwOv4Gq+7QXryreQksj806baKIYcKQTM7ack4Gc5HQeRqXh4jHb34uJs8qW1QRvpY5OF8I26nB29x61kGIdJuInXhqOPIeOioyrd7Gdo1MMYuJmaSaZ1jLAnONOFyBgdR1x1qfueO2q84PIAIdIlypwNQyF6YYn0GaQLSyZuEmVVIkt7kygY3GkjI+4b/wCzWxxKxlfhouCrapbn6TIF3IU6gMewGk1wys9rB/tny9Z8kIEppseOcPKySoFXlDU+YirqD0ONOSPlUV2q7VxPaSm0uDzEMZJUEEBj6kfccdKibzkSrdzRTXE5FtpaWQKE3YER4CKSwxmt/tBb/wCJolRPEVgGANySRtt1JJ/OpfUe5joI0Om+sRf9UAEpk4X2ntZiUWXxKmo6lZcgDdgSBkV7wvtPaXD8uKQlsEgFWXUB1K5A1Urvdx3d6rwI0kcdq6yKAVySrARZI2bxY/H0rW7KT4ureKJ2mjCvlJI/Ha7bjXgdTttgH06V127pFxEx391+h1UQFZtFFFbFylftRxu4idYLZIzIY3lZpCdIVOuAN2Y//PY4dxucz28UqxlLiASIVzqDBFZwwO2kknGKw9trASmPVaSzKob6yFwJEzjYKfjBH8K1exsPDVlPJaT6RpKlZ8iRQOqgEAenSspLu0id+PoI+66gZU71rX9xy43kxnQjNj1wM4/KtqtW/mWOKR2GVVGYj1AGcffWh1gSoaJIESlQ9oLhgoRoMiIzSNvpUeUfXZsYB9z5U08NuDJFHIRguisR6ZGaUbWJmjlH0W3UaEnVN8FcsfE2euAcDYb002cizQIwGlWVSB6e33dKx0XVLkmTFgZHqLaXtvovQxjKYEMaBfUQdRO09NrcZX3PO+vSijYZ3rJbGXJ1gAeWK0/oia9I1EjqcjArLYoqsy4YN6E529qyUH1zXmoTBcRZ0tt/pjIJjT6rkcQQsjg3Lb0/dRtp2rge7ktdSjThVbV8bfrIBjquMdTW9H2gtGl5AuIzJnGkHz/Zz0z7daVrW4ROK3qEgPKsaxDG5bl5yPQe9L3CEia1hie5KyLcDECRKZQ+vGrJIbG+SfLp5VsFd/fd3kdNd/YVUKx5+0lmmQ9xGCrFCC24YdRjrtX3fcetISolnjUsAVy3UHo3y9+lIS2yGPjDlVLCRgGIGR42O3pvWO9KKIZFlSOUWUWVmUGKZdPwoc51bYxgeWD1ro13Rt7JG/cohWBxXilpGitPJGFbddWDq9wN8jcbj1r5/pKziiE4eFIm6OMAN7DHU7Hb2NIomH0iylZltY2tQI2ZdSKQTkDWdsgjcnOCPWvk21uLeErcSKPpUrRTvGoiDADqNR+rYr4Tj1yKGu68R7j9eXmisqxvYpkEkTq6HoynI/8AutqlLu/udcU3gjBEzBnizy5DgZdc9M7dMDpsKba0U3Zmgoiiiiu0RRRRREUp9qLvRecPT6VLFrkf6tEys2APC5yNIGffqfPBqVn45CmnOvLLqwEOQPUjy6Ur9sFaW/4RLGrOgkkYsqkgAhcEnHh++qu1Y4w0ybLt9J7QC5pCzjvP4dpD5m06tLNym0x74Gs9FzuR1OPKvE7aP/Sr2RikMSoqjTExbWXA1sc4EOD8WAPekZ+HTf8A47NHyJeYbonRy21kal304yRjzppDyQcedzBMy3EEUSMiEqN01MzdFChWJ89vcUDjaeSplTT94VkJCn1xQScoziM8gP00F/X3xjz6Vkn7e2SXDWrGTmo6xkCNiMtjxZGfDllGfcVW3DuFqlu/D7i3vpbjnYEKNIkEgLDEusAoqgb6vYfc8di7Z14nxVmRgrPDpZlIDYVs4JHi8ulGucpBlb9j29sZZxboZOYZGjP1bYBGerDIAJBwT6GsK941iZAv13LMnLFwYjyC3oH/AL8Yxv0qP7srGQQcQVkZGe7m0l1K5BRQGGRuuc7j3pNMcz8Ji4OLWcXYnwQY2CAcxm5mvGnTg4zn8qZnAAqCSrO4v23tLeSWNuc5hAMpiiZ1iyMjWwGFyN6wSdu4FjhdoLnmThmjhVA8rKMfWYRiujBBznzpG7TSSRX3EIA0yQ3CR85ooRP4eXpZjhw0BOWG4PmfSpDjHEtD2Kwvcjh/0YBZbWPVNIRsIy2ksnRcgYOSfunOVMqX7T94CJw9buzBYyPoUvG2lCD4w+CNLYzjfc46ivu57RK17by866jX6PM5tWhI5gTXljkghvASBjfC4IycpR4Vcjgc8Jt5hJHeB2Qo2rSQviG3jG+5GfOmmOd7ni9hc/R5kjNtKDzEIwMyBdXkuoYYA74IqA4nXkok+iZYO2No8FvOpcpcyiGMBfEWyRuPIDScmtSfvCsklZDziiScp5xGTAr5xpL+ufbFK3Yns/PHxJrd0YW1k88sJKkKTNpCYJ2bSmo7dCTULa8NEcM9hcW99LOZzohjaRYJQWGJCwBRRtksfQfczOSSrH4t29sreZ4X5pMWnmukbNHFqGRrYdNjTK8wCF+oA1bb5GM7etU/2xt3iubloY7uC5IjCcpGlgvF0geMadIYYIIO22cZNW5w8vyo+YoV9C6lHQHAyB7A100kmCugUh9pONQXK28pkvI4XV/q4lwWw2PEdWB022PWtrsdPw4TCO2tpVlIb6yRd+m/iLHGfYVk4i3GBdho0jZAsgTd+WV1DBkGoDm4xj/ara4PDxJrpZbkxRpoZTHG7EP6HSSQCM/EMffWYA5wSN9cv3mys2TdWtejMbjRr8LeE7atvhz5Z6Vs1DcW4oiFocurmF3DBchQAd/mMZ/+60vcGi6hjHOMNHvolccOs1bEwu4AdsOfqz/qhwDkfM08WgTQvLxo0jTp6Yxtj2xSBFc2BOqd7mdv9cHT+Gc/nT7w50aKMxjCFQVGMYGNhjy2rDgSwk5cvQiesW8F6fxIPhubNvqPl6T83jdat+VDZDlWI3wPwzWaxQBmy2pxsc/3e1Yr+MgkhgNQGQfb0rLZoxZmZgT0wPKsbGO/GmW7zvABDr/XGY2P0Tdwi0rCSMmvvw06ra5K6tekasY1YGcemeuK+Bax69ehdf7Wkavx61sUV7kKhYPoyeIaF8XxbDxfP1rySzjYANGhC9AVBA+XpWxRSAiwz26ONLorD0YAj8DQ0CFdBVSvTSQMfLHSs1FIRYoYlUBVUADoAMAfdWWiipRFFFFERRRRREocYlDMsuJomMQKuATq6/VsoG34+e9T3Bi/Ij1qFbTuAMY+7y23xXvBIpUgjWZ9cgUBmznJ+fn8/Ot81mo0C15qE67RHDXae4DmStFSvnphkafvbz3JHCFE3XFwhkGkkRgZOerHooH9/tWbh16zlldNDrgkZzselRd9oM7FYJJGUrqwfDnG2Rg+Vb3BlPjJjkQnBJc5LdfYdKx0a9V2IgutLhABiL75RcWH1ah0ySALH02ClMXgb8Y56a7aEJX7W9uXtLqSIckRw2/OYSE65WbKpHHg4ADYJODtnpX32N7QX73DW15yWc2y3AEQIMeWxyn3I1bg+3qai+8jiJ+kOIrK1le0hWaSW4XJVWY6VRQQW3Gd9qnuASrFxK6tjbQxvIv0kSxZ1SKX04lzuHDEnbbc/f6MnNqsV5UJB3h3YuZkbht0yhYyIVTLx5ByWIByGxt8jU92P45e3M1wZraSGABOUJU0vnfUv+sNgc48/wAFztfes3Engl4q9lEIUaPlnAJOdQcgghuhGrqDt0NTnYJIw8ujiz33hXKs2eXufF8Rxnp91QCc2vp78kWVuxRWWeS3vbmBbhy8qII2BY9SpdCV/H+6mHgfC4rWCO3iBEca6Vycn1JJ8ySSakKKsAhSAivDXtfLHAzUokWHtRcTBEhMIklZ2GckRRrt49/iOCc+nlvTJ2a4g89ukjgajqB0/CdLFdQ9jjNLHDszs2i1tkS4jmaPIOWwyjxkHYEkEgYpm7MXiyW0bKgjAyuhfhUqSpx7bZrFhnOLhLpt46X+/XkvWx9Om1hDGAQ4biROaxg8o/tk3JUzRVbNxt/puqa8aMLcSRtDnSqRhG0yHybJ07nO5HtTH2Hvnlhk1SNKqSskcrDDOoAwT6ncjNXtrBxj9F5Kj+2vD3mngjfm8hldQY84Ehxo1+i+59/eoLsPHEt7EI45eYInW4Eo/qm23U+QJBG/kane3d46S26m8a2hcPqZBltQxjIB1afLI2B69aw9lZ4zcqF4rJcnS31TK4B265JxtWdwaa3OeU9Lz5KwGGp8qH7QG45R5CqxIYNkkMBjqmP1v+lTFafEkZopAhw5Rgp98HH51rqAlpAnpr0UUyA8EgG++nVLXO4o0ITlIMqBr14k6dT4shvM0zWCSCJBIcuFAYjzONz+NJn02L6MLZrSfmDfGD/Wftg5z1JPSm/hCuIYhJu4RdWeucefqay4Z0u1JsNTpy0F/PituNZlb9IHzHQa8/qd4WExcrDfwtliE1AgYP7OKzWaMXZyukEAY9feta+ZOYRITjbAFeWl1GjNhjowMZz1rx+2oU8YXPcAMxsXNkOGa5GXMBJdHznUDSAKcrjTgDbgf48lM0V8I2QCOhFfdfSAzcLKiiiipRFFFFERRRRREUUUURFFFFEUT2YtZIrSGOT41QA75x7Z88DA+6pU1Ddjzmyt/Bo+rG2/47779fvqZNcU/pHcPRSUrcTmCTORcGMnAICE+Qxk+dfacWeOCaVTJdMgUiNEIc5ONh5+v3VucQuJVY45AU9NZ8R2+frmvvgsTZkkYx4cjaM+EEDc/M15NJjxirE6ukfMImb3eQb/APzzsttSOwvwEfT4fSCP+SrTtRcLfMJJeDcSSQLo1xAhiuc6WyhDDPqKnO7G3jSWXFjewuyAtPd5LPggBAdIHnnb09q97UcYFpxRJ7s3AtlhHIMeoxByWD61HxNpIxnPl9x2C4gJ7+5ktPpBsmj1HnFivOL5PL1E6QVJyB7bDavUtm5rz91oduZ+ZeTBLSyYW6wc6SeMPK4kYBVTI6AHqanuyYjhv7u0FvaxlVSRZLdApKMx0xyf66/nnOKhu8H+j5biXn2sjG2gDyzxyBMas8qLH+cLHofLPzrc7rTDG00AsWtZikcxLScxpEbIUliAVxg+HA6+uaD6lO6sSiiirVKK8Ne1G3/EuXJFHy5H5rFdSjKr7sfIb/kaguDblS1pcYHuLpCu7e0bEkUNzmWR1jjR1CuB8bDwsQudsf3DZ17MSxNbRmJCiDI0HqpDEMCfM5zv50mWxgjJMcPEA2llQ6QeXqO+j0PX8TTHZTSx2sP0S2dsyYZJiFcDUdTn3J3+/pWDDGHTbTYd3Lv6Ruva+JH+kBLjBtJ79p2EXiSc2xAUN2kuRDI7zixuVySEcBZ1Gdk6NqwNt6aOyvFY7mAPFEYkB0hSABsAcrjYrv1+dKps5luJpIeFxTfWyHmNMrEnUTnBbwH2wCKbOA8RmkhaS4jSLSTsrqy6QB4sgkDfUMe1W0ic5/Q/+iB73XiKD7ZW8pubZoY4JH0yALMy+MbEgKSM465HT76z9n4b0TgzWdrEmDl4gNY22GxOxqL7V8Sjle1ure9hiwJNDOrZbcKwxpO22CCKz9leMTy3Co/EIZ10t9WiEMcDrnQOnzoHjtCL67ERp4ruLfynutPiMjLFIyDLhGKj3AOPzrcqA4peukuBcwRrym8DkatZzpb93OPwO1X1HZW+XuVNJhe6B373jawKWbbisYSTVeTEtFGwbLZEgLEoB5DOnPkQetO3CJGaGJnGHZFLfPHp5UoEyatf0nh2r9rC5/HTmpvgt3dGUpM0ciGLmLJGDp3OwzgBsjJ29KxYVxa6DPDxM3+Zy9PHMDmy2OPkBA+Rtv2st69uSrEeg2GM6if+VfdiTqZWOrGM7DY1FcM4tPIhmeOLloH1EZ1bDO2c48hWKw48+uLUYSsrYKJnWhJ2J3rMx01m1XVDlJkCCLG2kwdReLBsgTmKznCVIc0ASNbjUbd9j6cExWt1HICUYMAdJx5EeVbOaUeDXDpbuUCZM7As5AVBgeI7jPyFfS8VllhuV1Rlo1PjTOllIOcb9dtjW1uMblGYXIJ8ATA6Du62XL8E4PIabAgc7wJNuYTLPcImNTBdRwMnGT6D3rPmlFJXENqJFicNIgTIYkD1O/xflWy3G5FWcMq82ORUQAHDajhTjPzNSMY0fVa07/lzekkI7BP/ANN7kbfmyz42PBMuaM0r33HZVkkRWhXlKM685dsZKrvt6fhRcdoXPJ0cuMSJqLSZ05yQVBHuOvuKk42kCROlvOPXjC5GBrGLa/pPpe0pporT4fMzxq7qFYjJAII+4+nnW5WppkSFlIgwiiiipUIooooig+zXGlngiZ3j5zLlkDDO3npzkZAzjyqbNQ3D+zFnBIJYoQrjODqY9Rg9TjpUyarph2X5tVKXbhAk0jSQmUNjSQMgYGMY6CviGyleO4ERNtzF0xtjJU4I16TXl9KhndZJpEA06dJOOm4Pv51v8EMfj5crydM6s7demRXkUDTOJgRZz92Zp+adPmIvIHdNgt9XMKN5uBs6It07+uiSLznyTLbpx3ltFbx62McZSRssC+rmfEcbr5YBzvUj2KklW8mgl4o12ViDBOUFTBYeNWVmDYPhI2O9Q3FOz/B4uJiCeCKKF7fmBnmKJrDkYAGMMRuctg42HWm3slw7hMLv9ANuXK+Plyh205/eYhc4/KvWEz+681Knb9LE32WtbieRBDz9D6YQC2I+bscnfoMZFMfZFYEvb1NE63OoM5nYNrj1NyzGRsIhuAvUbA9KiO0/Afpd/NDbXbwTNDE86mPVE4VvqznIIcEe4/PLD2W7MyW8ktxcXLXNxKFUuVChVXJCqo6DJz/d6gDmUpooooq1SivkjbavqvKBCq/4fx6BYJI7u4uFmLEyDxBkIOwQgYUYA2+dSNvxPFghuLhomlJjSUg6/iOhiB56RknpWlwvj5VSJ7a4lcOxWQxDOCdhv8OB5b002M0dzErtEQM5CyqNSlSQDg5wdsg1hoHMBDttIP8A2uZPdzuvW+INLQR2cS6ZkEaGzRAIB4GdB1rtAsLyxtxhomEr6gsbnJzuzHbxE9cZHvTT2Xt0FlOLS457sZDrZdI5hQYGD0Hwn76iJILq4uLnS1nFy5WXRJEhcjqHJKknUDnPzpi4VwqU2k0EssRaTWoeBQoUMgXOABlhufwqaTIdIFrxr93H0XkhKEF/Opt4m4XzFSFhoKo2s5XMoblnAz1A2OoUx9nbktOB/RP0bZvrdKjG3TZB16dah24VxG2eIm5tkSONo0dsKijK+EggZY4znB6HffeX4Be3RuFSW+tZlIY6IsFjgddhsBU0w4G8+Df5XZiP5TjURxjhEUqOeWjSFCEZgMg4Onf5mpatTiUjrFIyDLhGKj3xt+daajQWnMJHv2Epuc14LTB968uKSVjQQ8n+jZebp06tJ+LHxasZ67+lOXCInSCJWxrWNQcdM46bbUizynQHe+nAkhLKctguCQ0RAO2DgU88DfVbwnBGY12Jyenqdz86wYIgvMbAfl0/tXqfEWuDBwLj+bXlm8IG61uFcIKW7QSEHVrBK+jfPzrDw7h1ymhGeMRoc5UHW4HRTnYCmCitQwzGhoE/KIF9rWPULzziXkuJg5jOm/EcLEpU/oCURgBoyyzGQKc6GBA2O3Xb8zWe24LL/wBo1PH9emDpBwrb4AHmuDTJRXIwdIEG9ufIj0JC7ONqkQSPDmD6gJaj4ROUhV2jPKkVgBnAVQNs43J3NZ7ngha6W4yNIwWXzLLnSfT0/Cp6ip/CU4AN4INz+XRQcXVmZ4jT82v68kvz8MnSaSWExYlA1CTPhI8xjrRecMnKoA8cgCaXWUeEn/SDHRqYKKn8My4E3585PieMqBiXyDa1tNdhJ1ttEKP4LZGGFYy2ornJ+Zzge29SFFFXMYGNDW6Cype8vcXO1N0UUUV0uUUUUURFFFFEWBrVCclFJ9SBmvYoVX4VUZ9ABWaioyjgiqzvIvIPpMn+LY7p4IFkmlkcqETLaRgfF5n762u7uPReTRPYwWcggVgqMzO6s/xBslCgIA23zimziXZa2nn57htZiaFwrELIjAjS4/WxqJB6g49K0ey3YqGylaUTTzOUEamZs6EBzoGANsgfhtjeuMpzT799VEXSd3hx2xvyQ/EXuBGoKWeMRr5DOMjV1wNql+654C8+ia+MoCB4bw+JBkkMo9/7h7VtcZ4FxQX0t1YyW0aypGriXUSxQHDEaTgjOBgjbrUdF2f4+txJdCeyMsiKhJD4CqSQoHL2GWJ8zUAHNMIrMorBah9C6yC+kaiOmcb49s1nq1SivDXteGiKtrDiya9VxdzKzpMsq5ccttahVQAbHGrcenlTd2SuZJLZHlJJOcFhgsA2FY+5GPnSzedo0Vmilt7ea41BVkULy2zsCxO6sPMdPcU5cHWYRLzypk3J0fCMk4A+QwPu86wYUy6M0wOfLUkm9vW69n4iP6YJZlkgi4uL/SAActwL8ALkEpBuOH2s94QLImOSeSMzNMw1SBWZgqg7DKnfpTP2FWJYZI44TCySsssZcvhwBkhj1UjFKc/0SS5OLqe0lMr5jwxRXJKagdgjMN+pxq60w8C4ja2shtEE75l0vcMMo0rfqs2fi6Dp/wA6mkWh2a297eFhI63XjL77WcCa4uYGaIyw6HjIDY5TNjEuM+LH91RHZDh8sd1FizaDlxMk7n4JDtpZSfMkZ29asWvavNBpfm5zt/K6zGIUN2nvjBbyOrYbGFOM7n/4TvtUd2c4mgRA9w7tKQoDqdn0gsoONx4hudqke13+Rzfu/wB4qB4vKEThsjbImnU2Dt4V9Pkfwqis9zKmabADzdBOq9HC0WVKIYRcuN7TZsgXB34azztI8a45bpHJ4UdomC6GQ41nPtjybetuw7QQOIhqw0mwGlh4gAWG46DPWlIycyHiTqrYZ42AIIONZOceW29bN1xGMtYTnUI48ozFTjIVRt5kZz+BqoYt05iRFuOmctJ12HTuVxwDMoYAZk8NezDwNNzYb667NEvH7ZQ5MmAknLbwts2+3T2O/SvD2hteUZuaCgbTkA5LYzgDGScb7UjXDa4rhsHDXanBGDg8w7jy2NMXbOHQ1tIMpGkh1Mi7rnTh8YI20+YrsYp5aXCIAHmSJ10AErh2BpNe1hmSTuNgDGmpJgdNUwcM4pFOpaJs4OCCCCD6EHcVv0sdlhG0k8kbyyBioMjhQrkA/CAo6ZwdqZ610Xl7AT5d/v8AUrz8RTFOoWt5a66adNPsNEUUUVaqUUUUURFFFFERRRRREUUUURFFFFERRRRREUUUURFFFFERRRRREV4a9rw0RI/Cb2NlaGKxBieN3TWRmfQQN8g4yW6k7VP9l3iNsnK1hcsNLnLIQxynyByB7YqJbse6sOVeSxoNQVepUMQWVTkYBIH4Uw8H4elvEsKZIXO56kk5JPuSTWSg2oCMwiBy5aRtM68u9eljalBzT2biSSDHzc5LpsTcab5toS1xDs5eMZoY5IBbzSGUl1YyAkhtO2xGodc5xWG17OXyGOIvG8bTrcTMMgqwfUVX1U4XfrnPQU9UVcaLSZv4rzUUUUVai8xRivaKIvMUaRXtFEXmKMV7RRF4K9oooiKKKKIiiiiiIooooiKKKKIiiiiiL//Z" alt="Второй слайд">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmbJs3mSBcDgUUKbEm5sbOisbVkTNPI9xecdPUeUUYHWeXY_yz6DTd90yqif7wOtEfZRk&usqp=CAU" alt="Третий слайд">       
+          <img src="https://learn.isic.ir/wp-content/uploads/2020/11/grammar.jpg" alt="Четвертый слайд">
+      </figure>
+        </div>
+        <h2 id="annotation"> <a name="rusanivskyi"></a> Русанівський В.М. Граматка української мови. Морфологія. Підручник.К.:Либідь,1993. - 336с.</h2>
+        <div class="row">
+            <div class="column">
+                <img alt="Обкладенка підручника" src="https://images.izi.ua/46991052" height="225px" width="125px">
+            </div>
+            <div class="column"><a href="https://uk.wikipedia.org/wiki/Русанівський_Віталій_Макарович">
+                <p style="float:right;"><img alt="фото автора" src="https://upload.wikimedia.org/wikipedia/uk/b/b6/Русанівський_Віталій_Макарович1.jpg" height="225px" width="125px">
+            </a> </div>
+            <p>У підручнику аналізуються теоретичні питання граматики з огляду на нові теоретичні здобутки українського мовознавства та сучасні продуктивні мовознавчі ідеї.
+                Системно викладено теоретичний курс морфології сучасної української літературної мови, а також розглянуто всі основні явища іменної та дієслівної словозміни. По-новому висвітлена принципові теоретичні питання: класифікацію частин мови, функції основних граматичних категорій, розвиток граматичних значень певних класів слів тощо.
+                Для студентів філологічних факультетів вузів.
+                </p>
+            </div>
+            <button onclick="location.href='https://drive.google.com/file/d/13yXuTaa5I-riHfWIrQQHsYO1IL4Qwl4D/view?usp=sharing'" type="button">
+            читати pdf*</button>
+            </div>
+            </div>
+                <div>    
+                </div>
+                <hr>
+                <h2 id="annotation"> <a name="vihovanec"></a>І. Р. Вихованець, К. Г. Городенська.Торетична морфологія української мови    за ред. І. Р. Вихованця. – Київ: Пульсари, 2004. – 398 </h2>
+                <div class="row">
+                    <div class="column">
+                        <img alt="Обкладенка підручника" src="https://books.burago.com.ua/wp-content/uploads/2018/09/morfologia.jpg" height="225px" width="125px">
+                    </div>
+                    <div class="column"><a href="https://uk.wikipedia.org/wiki/Вихованець_Іван_Романович">
+                        <p style="float:right;"><img alt="фото автора" src="https://esu.com.ua/images/article_images/V/1297.jpg" height="225px" width="125px">
+                    </a> </div>
+                    <p>У теоретичному курсі описано морфологічну систему і структуру сучасної української літературної мови. Розглянуто з позицій функціонально-категорійної граматики центральні питання морфології: морфологічні одиниці й типи морфологічних категорій; функції морфологічних одиниць і категорій; взаємозв’язки морфології, синтаксису і словотвору. Подано з погляду функціонально-категорійної теорії нову інтерпретацію частин мови, морфологічних категорій і багатьох інших граматичних явищ сучасної української літературної мови. У книзі апробовано теоретичні засади нової академічної граматики української мови. Для мовознавців, викладачів і студентів філологічних факультетів, учителів.</p>
+                    </div>
+                    <button onclick="location.href='https://drive.google.com/file/d/1DD1SqGtsdergZkTHUAT6hI7YSGo_DV3Z/view?usp=sharing'" type="button">
+                    читати pdf*</button>
+                    </div>
+                    </div>
+                        <div>    
+                        </div>
+                        <hr>
+                        <h2 id="annotation"><a name="horpinich"></a>Горпинич В.О.Морфологія української мови : підручник  – Київ: Академія, 2004. – 335 c</h2>
+                        <div class="row">
+                            <div class="column">
+                                <img alt="Обкладенка підручника" src="https://cv02.twirpx.net/3159/3159629.jpg?t=20200621012815" height="225px" width="125px">
+                            </div>
+                            <div class="column"><a href="https://uk.wikipedia.org/wiki/Горпинич_Володимир_Олександрович">
+                                <p style="float:right;"><img alt="фото автора" src="https://esu.com.ua/images/article_images/G/Gorpinich%20Volodimir%20Oleksandrovich.jpg" height="225px" width="125px">
+                            </a> </div>
+                            <p>У посібнику відповідно до програми розглядаються морфемні, морфологічні явища і словотвірні процеси української мови. Враховано найновіші досягнення вітчизняного і європейського мовознавства у відповідних галузях. Висвітлюються деякі питання, які ще не були об'єктом аналізу в навчальній літературі для вищої школи (валентність, морфонологія, словотвірний синтез тощо). Введено в обіг нові теоретичні поняття, новий дидактичний матеріал національного характеру. До кожного розділу подано списки рекомендованої літератури. Для студентів філологічних спеціальностей вищих закладів освіти.
+
+                            </p>
+                            </div>
+                            <button onclick="location.href='https://drive.google.com/file/d/1Yciue_I4eumDungfMBEVQgWPg9FWfWAA/view?usp=sharing'" type="button">
+                            читати pdf*</button>
+                            </div>
+                            </div>
+                                <div>    
+                                </div>
+                                <hr>
+                                <h2 id="annotation"><a name="zagnitko"></a>Загнітко А.П. Теоретична граматика сучасної української мови. Морфологія. Синтаксис.Донецьк: БАО, 2011. — 992 с.</h2>
+                                <div class="row">
+                                    <div class="column">
+                                        <img alt="Обкладенка підручника" src="https://cv02.twirpx.net/2726/2726799.jpg?t=20190110061531" height="225px" width="125px">
+                                    </div>
+                                    <div class="column"><a href="https://uk.wikipedia.org/wiki/Загнітко_Анатолій_Панасович">
+                                        <p style="float:right;"><img alt="фото автора" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Загнітко_Анатолій_Панасович.jpg/479px-Загнітко_Анатолій_Панасович.jpg" height="225px" width="125px">
+                                    </a> </div>
+                                    <p>У монографії розглядається система і структура морфологічних категорій української мови, з’ясовується її ядро, напівпериферія, визначаються статус міжрівневих граматичних категорій перехідного і проміжного типів, формально-граматична і семантична корелятивність/некорелятивність дієслівних категорій, рівні граматичних категорій дієслова та особливості міжрівневої опосередковано морфологічної граматичної категорії валентності дієслова, простежується місце морфологічних категорій у граматичному ладі української мови. Для фахівців з теоретичної і функціональної граматики, викладачів вузів, аспірантів і студентів.
+                                    </p>
+                                    </div>
+                                    <button onclick="location.href='https://drive.google.com/file/d/144prPz10Zb2KDePyYL-ce_IOFihv0Dtz/view?usp=sharing'" type="button">
+                                    читати pdf*</button>
+                                    </div>
+                                    </div>
+                                        <div>    
+                                        </div>
+                                        <hr>
+                                        <h2 id="annotation"> <a name="plush"></a>   Плющ.М.Я. 
+                                            Граматика української мови : у 2 ч.: Підручник- К.:Вища школа, 2005</h2>
+                                        <div class="row">
+                                            <div class="column">
+                                                <img alt="Обкладенка підручника" src="https://cv01.studmed.ru/4366dfbfa74/50d5cd8.jpg" height="225px" width="125px">
+                                            </div>
+                                            <div class="column"><a href="https://uk.wikipedia.org/wiki/Плющ_Марія_Яківна">
+                                                <p style="float:right;"><img alt="фото автора" src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Plusch_Marija_.png" height="225px" width="125px">
+                                            </a> </div>
+                                            <p>Подано матеріал з трьох розділів граматики: "Морфеміки", "Словотвору" і "Морфології". У трактуванні мовних одиниць поєднано традиційний підхід "від форми до змісту" та функціонально-семантичний — "від значення до форми". Для студентів філологічних спеціальностей вищих навчальних закладів. Буде корисний тим, хто прагне поглибити чи систематизувати свої знання з української мови.
+                                            </p>
+                                            </div>
+                                            <button onclick="location.href='https://drive.google.com/file/d/11ppSdNffJZ3Al5VGuK9JGjwGr1tt_HYh/view?usp=sharing'" type="button">
+                                            читати pdf*</button>
+                                            </div>
+                                            </div>
+                                                <div>    
+                                                </div>
+                                                <hr id="porog">
+              

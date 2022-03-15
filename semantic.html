@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+    <title>Linguistic_Library</title>
+</head>
+<style>
+    body {
+        zoom: auto;
+        size: 85%;
+    }
+</style>
+<body>
+  <hr id="shapka">
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <img id="logotip" src="logo_nbg.png" alt="логотип">
+        <a id="sectionname" href="index.html"> <img id="icon"  src="https://cdn-icons.flaticon.com/png/512/3339/premium/3339472.png?token=exp=1646746020~hmac=e1e7177b48914a183d514c258c0d1a87"> Головна</a>
+        <br>
+        <a id="sectionname" href="phonetic.html"> <img id="icon" src="voice_icon.png"> I_Фонетика</a>
+        <br>
+        <a id="sectionname" href="grammar.html"> <img id="icon" src="grammar_icon.png"> II_Граматика</a>
+        <br>
+        <a id="sectionname" href="semantic.html"> <img id="icon" src="Semantic_icon.png"> III_Семантика</a>
+        <br>
+        <a id="sectionname" href="syntax.html"> <img id="icon" src="Syntax_icon.png"> IV_Синтаксис</a>
+        <br>
+        <a id="sectionname" href="#"> <img id="icon" src="Text_icon.png"> V_Текст</a>
+      </div>
+      <span style="font-size:55px;cursor:pointer; color: gold;" onclick="openNav()">&#9776; </span>
+      <div><input type="text" class="live-search-box" placeholder="search here" />
+        <li> <a href="#alifienko">Алефіренко М.Ф.</li> </a>
+        <li><a href="#apresian"> Апресян Ю.Д.</li> </a>
+        <li><a href="#voloshin">Волошин В.В. </li> </a>
+        <li><a href="#kolshankij">Колшанський Г.В.</li> </a>
+        <li><a href="#kongrauz">Кронгауз М.О.</li></a>
+        <li><a href="#lakoff">Лакофф Дж.</a></li>
+        <li><a href="#Minkiy">Мінський М.</a></li>
+        </ul>
+      </div>
+      <h4 id="zagolovok"> Розділ III: Загальна та прикладна семантика <img id="titleimg" src="Semantic_icon.png"></h4> 
+      <div id="slider">
+        <figure>
+        <img src="data:image/jpeg;base64,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" alt="Первый слайд">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM5BZE5E4IQRtsEqE3zG-IRJfqa1QtngN_gA&usqp=CAU" alt="Второй слайд">
+        <img src="https://cdn.searchenginejournal.com/wp-content/uploads/2021/07/semantic-search_-what-it-is-60d57de87803c-61090bab06e56-sej.png" alt="Третий слайд">       
+          <img src="https://ebiquity.umbc.edu/blogger/wp-content/uploads/2013/01/wc.png" alt="Четвертый слайд">
+      </figure>
+        </div>
+        <h2 id="annotation"><a name="alifienko">Алефиренко Н. Ф.
+        Спорные проблемы семантики: Монография.— М.: Гнозис, 2005.— 326 с.</a></h2>
+        <div class="row">
+     <div class="column">
+ <img alt="Обкладенка підручника" src="https://platona.net/_ld/43/78238520.jpg" height="225px" width="125px">
+  </div>
+<div class="column"><a href="https://ru.wikipedia.org/wiki/Алефиренко,_Николай_Фёдорович">
+<p style="float:right;"><img alt="фото автора" src="https://medialing.ru/issues/img/medialingvistika-2016-1-11-1.jpg" height="225px" width="125px">
+ </a> </div>
+<p>Начинающих лингвистов — студентов, магистрантов, аспирантов — книга ориентирует на упорядочение понятийно-категориального аппарата предпринимаемых семантических исследований, а ученых-языковедов — на продолжение дискуссии.  
+</p>
+</div>
+ <button onclick="location.href='https://drive.google.com/file/d/1XVtToV1dZQa4PsjIVdTlKDx2O7gkJohw/view?usp=sharing'" type="button">
+ читати pdf*</button>
+  </div>
+ </div>
+  <div>    
+  </div>
+  <hr>
+  <h2 id="annotation"><a name="apresian"></a>Апресян Ю.Д. Избранные труды. Том 1. Лексическая семантика (синонимические средства языка)
+  </h2>
+<div class="row">
+<div class="column">
+    <img alt="Обкладенка підручника" src="https://cdn1.ozone.ru/multimedia/c360/1000212838.jpg" height="225px" width="125px">
+</div>
+<div class="column"><a href="https://uk.wikipedia.org/wiki/Апресян_Юрій_Деренікович">
+    <p style="float:right;"><img alt="фото автора" src="http://www.koob.ru/foto/author/9882.jpg" height="225px" width="125px">
+</a> </div>
+<p>В монографии предлагаются элементы семантического языка для
+    описания смысла слов естественного языка. На этой основе выполнено
+    описание синонимических средств языка (словообразования, регулярной
+    многозначности, синонимов, конверсивов, антонимов и т.п.) и сформулированы правила глубинно-синтаксических преобразований. Полученные
+    результаты могут быть также использованы в работе по автоматическому
+    синтезу текстов.</p>
+</div>
+<button onclick="location.href='https://drive.google.com/file/d/13D0viUix9TeQR5fMv6edcoBBtk8Kk6U8/view?usp=sharing'" type="button">
+читати pdf*</button>
+</div>
+</div>
+<div>    
+</div>
+<hr>
+<h2 id="annotation"><a name="voloshin"></a>Волошин, В. Г.
+    Комп'ютерна лінгвістика: Навч. посібник / В. Г. Волошин. – Суми: Університетська книга, 2004. – 382 с. </h2>
+<div class="row">
+     <div class="column">
+         <img alt="Обкладенка підручника" src="https://img.yakaboo.ua/media/catalog/product/cache/1/image/398x565/31b681157c4c1a5551b0db4896e7972f/7/5/75931_44884563.jpg" height="225px" width="125px">
+     </div>
+     <div class="column"><a href="">
+     <p style="float:right;"><img alt="фото автора" src="https://c0.klipartz.com/pngpicture/12/992/gratis-png-signo-de-interrogacion-silueta-de-cabeza-de-perro.png" height="225px" width="125px">
+        </a> </div>
+ <p>Посібник містить системний виклад основ комп'ютерної лінгвістики - одного з новітніх напрямів інформаційної технології сучасного мовознавства. Описано методологію та інструментальні засоби організації процесу набуття знань.
+            Основна увага приділяється питанням добору і формування лінгвістичних структур, що супроводжують процес викладу наукових положень комп'ютерної лінгвістики, яка лежить на стику багатьох наук - від технічної кібернетики до прикладної лінгвістики.
+            Для студентів відділень теоретичної і прикладної лінгвістики університетів і вузів, студентів усіх спеціальностей, що цікавляться проблемами комп'ютерної обробки текстів і усного мовлення. Може бути корисним широкому колу фахівців, які вирішують завдання побудови систем прикладного характеру в галузі штучного інтелекту, машинного перекладу, аналізу і синтезу мови, створення інформаційно-пошукових систем, евристики, експертних систем та інших технічних додатків лінгвістики.
+     </p>
+        </div>
+        <button onclick="location.href='https://drive.google.com/file/d/1vFoL42d0GBYCSDPNEewv-s0ASwb8_Wrn/view?usp=sharing'" type="button">
+        скачати djvu* з ресурсу*</button>
+        </div>
+        </div>
+            <div>    
+            </div>
+            <hr>
+            <h2 id="annotation"> <a name="kolshankij"></a>Колшанський Г.В. Контекстная семантика. М.:Наука,1980.-154с.</h2>
+            <div class="row">
+                <div class="column">
+                    <img alt="Обкладенка підручника" src="https://cv01.twirpx.net/1305/1305527.jpg?t=20160609041219" height="225px" width="125px">
+                </div>
+                <div class="column"><a href="https://www.livelib.ru/author/121437-gennadij-kolshanskij">
+                    <p style="float:right;"><img alt="фото автора" src="https://upload.wikimedia.org/wikipedia/ru/thumb/0/0d/%D0%9A%D0%BE%D0%B7%D0%BB%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9%2C_%D0%93%D0%B5%D0%BD%D0%BD%D0%B0%D0%B4%D0%B8%D0%B9_%D0%92%D0%BB%D0%B0%D0%B4%D0%B8%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B8%D1%87.jpg/274px-%D0%9A%D0%BE%D0%B7%D0%BB%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9%2C_%D0%93%D0%B5%D0%BD%D0%BD%D0%B0%D0%B4%D0%B8%D0%B9_%D0%92%D0%BB%D0%B0%D0%B4%D0%B8%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B8%D1%87.jpg" height="225px" width="125px">
+                </a> </div>
+                <p>В книге рассматриваются вопросы контекстной обусловленности значений слов, словосочетаний и предложений; анализируются способы снятия многозначности указанных языковых единиц в реальных коммуникативных актах; дается характеристика формальных и смысловых факторов, участвующих в создании однозначного смысла как в рамках слов и словосочетаний, так и в рамках целого текста. Наряду с элементами правил смысловой сочетаемости лексических единиц рассматриваются также правила функционирования грамматических конструкций в рамках смысловых связей текста (импликации, пресуппозиции и т. д.). Работа насыщена примерами, взятыми из произведений различных стилей, на основе которых выдвигаются рекомендации использования контекстных условий для адекватной передачи мысли.
+                </p>
+                </div>
+                <button onclick="location.href='https://drive.google.com/file/d/1famtrZFtGbg49UoHePmfZAQ_NeIlThN1/view?usp=sharing'" type="button">
+                читати pdf*</button>
+                </div>
+                </div>
+                    <div>    
+                    </div>
+                    <hr>
+                    <h2 id="annotation"><a name="kongrauz"></a>Кронгауз М. А.
+                          Семантика: Учебник для студ. лингв, фак. высш. учеб.
+                        заведений / Максим Анисимович Кронгауз. — 2-е изд., испр.
+                        и доп. — М.: Издательский центр «Академия», 2005. — 352 с.</h2>
+                    <div class="row">
+                        <div class="column">
+                            <img alt="Обкладенка підручника" src="https://platona.net/_ld/43/84586672.jpg" height="225px" width="125px">
+                        </div>
+                        <div class="column"><a href="https://uk.wikipedia.org/wiki/%D0%9A%D1%80%D0%BE%D0%BD%D0%B3%D0%B0%D1%83%D0%B7_%D0%9C%D0%B0%D0%BA%D1%81%D0%B8%D0%BC_%D0%9E%D0%BD%D0%B8%D1%81%D0%B8%D0%BC%D0%BE%D0%B2%D0%B8%D1%87">
+                            <p style="float:right;"><img alt="фото автора" src="https://philology.hse.ru/org/persons/cimage/147023822" height="225px" width="125px">
+                        </a> </div>
+                        <p>В учебнике семантика рассматривается как лингвистическая дисциплина, изучающая значения языковых единиц, их функционирование в языке и речи. Лингвистическая семантика обсуждается в контексте смежных с ней дисциплин: прагматики, теории речевых актов и др.
+                            Наряду с основным адресатом — студентами-лингвистами — может быть рекомендован широкому кругу специалистов в области филологии и философии.</p>
+                        </div>
+                        <button onclick="location.href='https://drive.google.com/file/d/1u_P0ZDB2sOu1IxQLDRLQfpW8cRC8IE7s/view?usp=sharing'" type="button">
+                        читати pdf*</button>
+                        </div>
+                        </div>
+                            <div>    
+                            </div>
+                            <hr>
+                            <h2 id="annotation"><a name="lakoff"></a>Лакофф Дж. Когнитивная семантика // Язык и интеллект. М., 1996. </h2>
+                            <div class="row">
+                                <div class="column">
+                                    <img alt="Обкладенка підручника" src="data:image/png;base64,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" height="225px" width="125px">
+                                </div>
+                                <div class="column"><a href="https://uk.wikipedia.org/wiki/%D0%94%D0%B6%D0%BE%D1%80%D0%B4%D0%B6_%D0%9B%D0%B0%D0%BA%D0%BE%D1%84%D1%84">
+                                    <p style="float:right;"><img alt="фото автора" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/George_Lakoff.jpg/560px-George_Lakoff.jpg" height="225px" width="125px">
+                                </a> </div>
+                                <p>Анализ лексических значений посредством семантических компонентов имеет дело как с микроструктурами, так и с макроструктурами. В первом случае анализируются различные значения одного слова (если, конечно, оно поли-семантично), во втором случае — обычно тематически близкие группы слов. Но в обоих случаях, как было уже упомянуто, компонентный анализ следовал тем процедурам, которые были выработаны для выделения различительных признаков в фонологии и для описания через пучки этих различительных признаков отдельных фонем любого языка. В результате такого подхода в фонологии был установлен весьма ограниченный набор различительных признаков, который образовывал универсальный алфавит описания фонем всех языков. По поводу статуса различительных признаков велись горячие споры, известную ясность в которые внесли слова Р. Якобсона (а именно с его именем связывается концепция различительных признаков в фонологии) о том, что уровень, фонем и уровень признаков речевого анализа требуют того, чтобы оба набора строго различались. Уже этих поясняющих слов достаточно для того, чтобы, принимая фонемы как минимальные единицы языка, вынести различительные признаки за пределы языка и отнести их к уровню описания — описания через посредство конечного универсального набора признаков. Кстати говоря, в обратной последовательности именно универсальный характер фонологических различительных признаков послужил Н. Хомскому основанием для отнесения их к языку, поскольку он и ставил перед собой задачу найти языковые универсалии. Другими словами, универсальность используется у Н. Хомского в качестве критерия определения языкового статуса тех или иных категорий или единиц.
+
+                                </p>
+                                </div>
+                                <button onclick="location.href='https://drive.google.com/file/d/1sq-TiF-EVMny80QxdPrPiKl1DG9G_Uwz/view?usp=sharing'" type="button">
+                                читати pdf*</button>
+                                </div>
+                                </div>
+                                    <div>    
+                                    </div>
+                                    <hr>
+                                    <h2 id="annotation"><a name="Minskiy"></a>Минський М.Фреймы для представления знаний. М.:Энергия,1979.-152с.</h2>
+                                    <div class="row">
+                                        <div class="column">
+                                            <img alt="Обкладенка підручника" src="data:image/jpeg;base64,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" height="225px" width="125px">
+                                        </div>
+                                        <div class="column"><a href="https://uk.wikipedia.org/wiki/%D0%9C%D0%B0%D1%80%D0%B2%D1%96%D0%BD_%D0%9C%D1%96%D0%BD%D1%81%D1%8C%D0%BA%D0%B8%D0%B9">
+                                            <p style="float:right;"><img alt="фото автора" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Marvin_Minsky_at_OLPCb.jpg/450px-Marvin_Minsky_at_OLPCb.jpg" height="225px" width="125px">
+                                        </a> </div>
+                                        <p> В книге описывается новый подход к решению проблемы представления знаний в системах искусственного интеллекта. В основе его лежит система фреймов — особых структур данных для понятийного представления стереотипных ситуаций в рамках общего контекста знаний о мире. С этих позиций дается описание механизмов человеческого мышления, распознавания образов, восприятия зрительной м слуховой информации, а также проблемы лингвистики, обучения и методы решения задач. Автор книги — известный американский ученый, специалист по искусственному интеллекту. Книга предназначена для широкого круга научных и инженерно-технических работников, интересующихся созданием искусственного интеллекта. Она может служить хорошим пособием для студентов, специализирующихся в этой области</p>
+                                        </div>
+                                        <button onclick="location.href='https://drive.google.com/file/d/1ckWEyzBmYTyhSE8Lvs-0o3qtIiCflRJc/view?usp=sharing'" type="button">
+                                        читати pdf*</button>
+                                        </div>
+                                        </div>
+                                            <div>    
+                                            </div>
+                                            <hr id="porog">

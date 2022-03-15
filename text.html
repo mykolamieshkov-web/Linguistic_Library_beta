@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+    <title>Linguistic_Library</title>
+</head>
+<style>
+    body {
+        zoom: auto;
+        size: 85%;
+    }
+</style>
+<body>
+  <hr id="shapka">
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <img id="logotip" src="logo_nbg.png" alt="логотип">
+        <a id="sectionname" href="index.html"> <img id="icon"  src="https://cdn-icons.flaticon.com/png/512/3339/premium/3339472.png?token=exp=1646746020~hmac=e1e7177b48914a183d514c258c0d1a87"> Головна</a>
+        <br>
+        <a id="sectionname" href="phonetic.html"> <img id="icon" src="voice_icon.png"> I_Фонетика</a>
+        <br>
+        <a id="sectionname" href="grammar.html"> <img id="icon" src="grammar_icon.png"> II_Граматика</a>
+        <br>
+        <a id="sectionname" href="semantic.html"> <img id="icon" src="Semantic_icon.png"> III_Семантика</a>
+        <br>
+        <a id="sectionname" href="syntax.html"> <img id="icon" src="Syntax_icon.png"> IV_Синтаксис</a>
+        <br>
+        <a id="sectionname" href="text.html"> <img id="icon" src="Text_icon.png"> V_Текст</a>
+      </div>
+      <span style="font-size:55px;cursor:pointer; color: gold;" onclick="openNav()">&#9776; </span>
+      <div><input type="text" class="live-search-box" placeholder="search here" />
+        <li> <a href="#gnatuk">Гнатюк М.М.</li> </a>
+        <li><a href="#dolin"> Долін А.А.</li> </a>
+        <li><a href="#saragim"> Сакражим К.С.</li> </a>
+        <li><a href="#dubrovina">Дубровіна Л.А.</li> </a>
+        <li><a href="#reiser">Рейсер С.А.</li></a>
+        <li><a href="#cicinene"> Рима Цицинене</li></a> 
+        </ul>
+      </div>
+      <h4 id="zagolovok"> Розділ V: Текстологія <img id="titleimg" src="Text_icon.png"></h4> 
+      <div id="slider">
+        <figure>
+        <img src="data:image/jpeg;base64,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" alt="Первый слайд">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwXZFIIW8nvZqz6PflPahYvY1jiWaYUhXrRTgyPxcFOrxgVaWSjvpPhuVzau2fcFslGkg&usqp=CAU" alt="Второй слайд">
+        <img src="https://upload.wikimedia.org/wikipedia/en/1/11/Fast_text.png" alt="Третий слайд">       
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDim0ZTiXcBwtnsu0uRcpxglowmiLMCbFcLWvTko3T1EEj7hpfdOI5abAENh0ggX1dm_A&usqp=CAU" alt="Четвертый слайд">
+      </figure>
+        </div>
+        <h2 id="annotation"><a name="gnatuk"></a>М.М. Гнатюк. Текстологічні студії.К.:Експрес-поліграф,2011.-156с.</h2>
+        <div class="row">
+            <div class="column">
+                <img alt="Обкладенка підручника" src="https://cv01.twirpx.net/1391/1391544.jpg?t=20140406234801" height="225px" width="125px">
+            </div>
+            <div class="column"><a href="https://uk.wikipedia.org/wiki/Гнатюк_Мирослава_Михайлівна">
+                <p style="float:right;"><img alt="фото автора" src="http://phil.knu.ua/wp-content/uploads/2017/07/Гнатюк-М.М.-200x300.jpg" height="225px" width="125px">
+            </a> </div>
+            <p>Перший   навчальний   посібник  з  української  текстології,   в  основу   якого  лігбагатолітній  досвід роботи  автора з архівними  матеріалами, рукописною  і  друкованоюспадщиною    класиків    вітчизняної   літератури,    викладацька    праця    в    Київськомунаціональному    університеті    імені   Тараса    Шевченка.       На   сторінках    посібникарозглядаються   теоретичні   й   історико-літературні   аспекти   текстології,   наукова   іпрактична   цінність   якої   визначаються   ставленням   до   художнього   тексту   як   докультурного  надбання  нації.  Незаанґажований,  позбавлений  ідеологічних  догм  поглядна  авторський текст став результатом грунтовних текстологічних досліджень, де  вихідна   перший   план   історії  тексту   твору з поля   зору   послідовної  еволюції     -      відстановлення  і  розвитку  первинного  задуму  до  кінцевого  результату  втілення,  входитьу  рамки  теоретичного  осмислення   способів  творчої  роботи,   еволюції  образної  тасвітоглядної системи  митця,  психології процесів художнього  мислення.Навчальний  посібник  розрахований  на  студентів-філологів  вищих  навчальнихзакладів освіти,  аспірантів і  вчителів-словесників.</p>
+            </div>
+            <button onclick="location.href='https://drive.google.com/file/d/1k44hmGiJX6A-JMGmxDZeKSSNyIrEcgsT/view?usp=sharing'" type="button">
+            читати pdf*</button>
+            </div>
+            </div>
+                <div>    
+                </div>
+                <hr>
+                <h2 id="annotaion"><a name="dolin"></a>Долинин К.А. Интерпретация текста: Французский язык:
+                    Учебное пособие. Изд. 4-е. — М.: КомКнига, 2010. — 304 с.
+                    Впервые: Долинин К.А. Интерпретация текста.</h2>
+                <div class="row">
+                    <div class="column">
+                        <img alt="Обкладенка підручника" src="https://superlinguist.ru/images/stories/covers/Dolinin2010.jpg" height="225px" width="125px">
+                    </div>
+                    <div class="column"><a href="https://ru.wikipedia.org/wiki/Долин,_Александр_Аркадьевич">
+                        <p style="float:right;"><img alt="фото автора" src="https://www.koob.ru/foto/author/14038.jpg" height="225px" width="125px">
+                    </a> </div>
+                    <p>Настоящая книга представляет собой учебное пособие по курсу «Интерпретация текста» (французский язык). Основное внимание уделяется структуре и методике анализа художественных произведений, в первую очередь прозаических. Читатель найдет в книге как необходимые сведения о структуре художественного текста, так и методы целостного анализа литературного произведения. Основному разделу книги предпослана первая глава, где разбираются некоторые из общих закономерностей речевой деятельности, знание которых необходимо для плодотворной работы над текстом.
+                        Пособие предназначено для студентов филологических вузов, но будет также полезно для преподавателей, переводчиков, литературоведов и всех интересующихся французским языком.
+                        </p>
+                    </div>
+                    <button onclick="location.href='https://drive.google.com/file/d/1VqRmzm-Oewz4N6I0I_Rm0JmHRDfYP_cA/view?usp=sharing'" type="button">
+                    читати pdf*</button>
+                    </div>
+                    </div>
+                        <div>    
+                        </div>
+                        <hr>
+                        <h2 id="annotation"><a name="saragim"></a>Саражим К.С. Ткстознавство.ідручник. — 2-ге вид. – Київ : Київський університет, 2012. — 528 с.</h2>
+                        <div class="row">
+                            <div class="column">
+                                <img alt="Обкладенка підручника" src="https://cv02.twirpx.net/2661/2661744.jpg?t=20181029043547" height="225px" width="125px">
+                            </div>
+                            <div class="column"><a href="https://uk.wikipedia.org/wiki/Серажим_Катерина_Степанівна">
+                                <p style="float:right;"><img alt="фото автора" src="https://uu.edu.ua/upload/universitet/Galereya_slavi/Ulyubleni_vikladachi/Serazhim/Serajm_KC.jpg" height="225px" width="125px">
+                            </a> </div>
+                            <p>исвітлено теоретичні засади й історію розвитку текстознавства. Розкрито сутність та механізми творення тексту, показано особливості його функціонування в ЗМК. Подано інформацію про такі види лінгвістичного аналізу, як семантичний, семасіологічний, семіотичний, символьний, дискурсивний, контекстний, соціо-, когніто- та прагмалінгвістичний. Розкрито методологічні принципи побудови журналістських текстів. Увагу приділено мовним особливостям газетного заголовка, семантичному співвідношенню "заголовок - зачин", текстовим ремінісценціям, різновидам аргументації. Розглянуто гіпертекст як засіб нелінійної репрезентації тексту.</p>
+                            </div>
+                            <button onclick="location.href='https://drive.google.com/file/d/1tQl-Aagb0SjILXQ20GZvInVxxtkgociq/view?usp=sharing'" type="button">
+                            читати pdf*</button>
+                            </div>
+                            </div>
+                                <div>    
+                                </div>
+                                <hr>
+                                <h2 id="annotation"><a name="dubrovina"></a>Дубровіна, Любов Андріївна. Кодикологія та кодикографія української рукописної книги / Л. А. Дубровіна ; відп. ред. О. С. Онищенко ; ред.: Н. М. Зубкова, М. Л. Скирта; Академія наук України, Інститут української археографії, Центральна наукова бібліотека ім. В. І. Вернадського, Інститут рукопису. – К., 1992. – 262 с</h2>
+                                <div class="row">
+                                    <div class="column">
+                                        <img alt="Обкладенка підручника" src="https://lh3.googleusercontent.com/proxy/4gbwip5AcmsmMqyw_ZX8WvoUUVDg0EAaODhvHYAm1tcbeTHPYixP3iQN8dQE9kxUXiL88I3tLy_T0PKCpz7M3VVXeSlOzec" height="225px" width="125px">
+                                    </div>
+                                    <div class="column"><a href="https://uk.wikipedia.org/wiki/Дубровіна_Любов_Андріївна">
+                                        <p style="float:right;"><img alt="фото автора" src="https://upload.wikimedia.org/wikipedia/uk/5/5b/Dubrovina_Liubov_Andriivna.jpg" height="225px" width="125px">
+                                    </a> </div>
+                                    <p>Монографію присвячено визначенню теоретичних і методологічних підвалин науки про рукописну книгу - кодикології та її камеральної галузі - кодикографії. У ній вводиться поняття "рукописна книга" як комплексне історичне джерело, окреслюється об'єкт і предмет української кодикології та кодикографії, їхнє місце серед наук джерелознавчого та книгознавчого циклів. Автор пропонує археографічну, кодикологічну і документально-інформаційну моделі рукописних книг та методику їх кодикографування, а також розглядає основні напрями вивчення української книжково-рукописної спадщини
+
+                                        Видання розраховане не дослідників у галузі книгознавства, джерелознавства, археографії, кодикології, палеографії, а також фахівців з історії писемної та книжкової культури України.</p>
+                                    </div>
+                                    <button onclick="location.href='https://drive.google.com/file/d/1S3uyyBZeluRFl7QZ6y-rUo7coY5J2lLY/view?usp=sharing'" type="button">
+                                    читати pdf*</button>
+                                    </div>
+                                    </div>
+                                        <div>    
+                                        </div>
+                                        <hr>
+                                        <h2 id="annotation"><a name="reiser"></a>Рейсер С. А.
+                                            Основы текстологии. Изд. 2-е Учебное пособие для студентов педагогических институтов. Л., «Просвещение», 1978. 176с.</h2>
+                                        <div class="row">
+                                            <div class="column">
+                                                <img alt="Обкладенка підручника" src="https://cv02.twirpx.net/3162/3162609.jpg?t=20200624051014" height="225px" width="125px">
+                                            </div>
+                                            <div class="column"><a href="https://ru.wikipedia.org/wiki/Рейсер,_Соломон_Абрамович">
+                                                <p style="float:right;"><img alt="фото автора" src="https://upload.wikimedia.org/wikipedia/ru/9/95/ReiserSA.jpg" height="225px" width="125px">
+                                            </a> </div>
+                                            <p>В книге предпринята попытка описания палеографии, раскрыты методы и приемы текстологии литературы нового времени, рассмотрены проблемы основного текста, датировки, атрибуции, типов издания, расположение материала и вспомогательного аппарата книги.</p>
+                                            </div>
+                                            <button onclick="location.href='https://drive.google.com/file/d/1BVuP3Gy7eLi1fW9Iv-Svc6Iknd0LQ5hv/view?usp=sharing'" type="button">
+                                            читати pdf*</button>
+                                            </div>
+                                            </div>
+                                                <div>    
+                                                </div>
+                                                <hr>
+                                                <h2 id="annotation"><a name="cicinene"></a>Pукописная книга и ее рецепция в Великом княжестве Литовском XIV–середины XVI вв.</h2>
+                                                <div class="row">
+                                                    <div class="column">
+                                                        <img alt="Обкладенка підручника" src="https://i1.rgstatic.net/publication/326312350_Mir_rukopisnoj_i_pecatnoj_knigi_Velikogo_knazestva_Litovskogo_v_XVI-XVII_vv_svazi_i_peresecenia/links/5b4565d4a6fdcc66191715e0/largepreview.png" height="225px" width="125px">
+                                                    </div>
+                                                    <div class="column"><a href="https://library.ajman.ac.ae/eds?search=y&query=%22Рима%20Циценене%22&type=AR&resultsperpage=25">
+                                                        <p style="float:right;"><img alt="фото автора" src="https://c0.klipartz.com/pngpicture/12/992/gratis-png-signo-de-interrogacion-silueta-de-cabeza-de-perro.png" height="225px" width="125px">
+                                                    </a> </div>
+                                                    <p>Цель статьи — проанализировать эволюцию представления о рукописной книге и ее рецепции обществом ВКЛ. Для этого требуется установить, каким образом в обществе проявлялась рецепция книги и как это отраженo в источниках того времени. Материалом исследования послужили рукописные кодексы, архивные документы и объекты искусства. Установлено, что книга удовлетворяла служебные, общественные и личные потребности членов общества того времени. С увеличением числа экземпляров и собраний, с повышением разнообразия взаимоотношений человека с книгой в обществе ВКЛ изменялось и само представление о книге. Если на раннем этапе кодекс воспринимался как статичный, сакральный, целостный объект, мало подверженный человеческому влиянию, то уже с XV в. можно говорить о книге как о мобильном, меняющемся объекте, крайне зависимом от связанного с ним человека. Книги мигрировали в географическом и жизненном пространстве. В начале XVI в. изменилось восприятие целостности книги. Понятие о кодексе как о единице, физически объединяющей отдельные произведения (книги), сменило понятие кодекса как единого целого (нового произведения), имеющего общие внутренние и внешние признаки. </p>
+                                                    </div>
+                                                    <button onclick="location.href='https://drive.google.com/file/d/1jaoN3yF3pV05xagQML5co5DWdLfbghmA/view?usp=sharing'" type="button">
+                                                    читати pdf*</button>
+                                                    </div>
+                                                    </div>
+                                                        <div>    
+                                                        </div>
+                                                        <hr id="porog">
+
