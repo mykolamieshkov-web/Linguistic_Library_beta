@@ -1,0 +1,258 @@
+body {
+    background-color: black;
+    zoom: auto;
+}
+#logotip {
+    background-image: url("img/logo_nbg.png");
+    background-repeat: no-repeat;
+    image-resolution:top;
+    height: 150px;
+    width: 95%;
+    display: inline-block;
+position: top; 
+text-align: center;
+}
+#header {
+    width: 100%;
+    height: 450px;
+    background-image: url("https://langoschool.com/wp-content/uploads/2021/06/imgonline-com-ua-Resize-3S3GVkUtFYk.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-color: black;
+    border: 5px solid gold;
+    text-align: center;
+}
+  .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: black;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+        border: 5px solid gold;
+        opacity: 100%;
+      }
+      
+      .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+      }
+      
+      .sidenav a:hover {
+        color: #f1f1f1;
+      }
+      
+      .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+        color: gold;
+      }
+      
+      #logo {
+        border-radius: 50%;
+        border: 7px solid white;
+        max-width: 100%;
+        height: 125px ;
+      }
+      #sectionname {
+        color: gold;
+        text-align: center;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-style: inherit;
+        font-size:medium;
+      }
+      p {
+        color: whitesmoke;
+        float: right;
+        text-align: right;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: x-large;
+        font-style: italic;
+      }
+      #content {
+        height: 250px;
+        width: 300px;
+        size:initial;
+        text-align: center;
+        opacity: 1.5;
+        float: left;
+      }
+      #shapka {
+        border: 10px solid gold;
+       height: 40px;
+        width: 100%;
+        background-color: gold;
+      }
+      #icon {
+        float: left;
+        width: 45px;
+        height: 45px;
+        line-height: normal;
+      }
+      #title {
+       text-align: center;
+       color: gold;
+       text-shadow: 5px solid black;
+       font-family: cursive;
+       font-style: initial;
+       font-size: xx-large;
+       
+      }
+      #porog {
+        border: 10px solid gold;
+        height: 50px;
+        width: 100%;
+        background-color: gold;
+      }
+      ::-webkit-scrollbar {
+          width: 15px;
+          opacity: 1.5;
+      }
+      ::-webkit-scrollbar-track {
+        background: whitesmoke;
+      }
+      ::-webkit-scrollbar-thumb {
+        background:  gold;
+      }
+        :-webkit-scrollbar-thumb:hover {
+              background: white;
+              }
+              @keyframes slidy {
+                0% { left: 0%; }
+                20% { left: 0%; }
+                25% { left: -100%; }
+                45% { left: -100%; }
+                50% { left: -200%; }
+                70% { left: -200%; }
+                75% { left: -300%; }
+                95% { left: -300%; }
+                100% { left: -400%; }
+                }
+                
+                body { margin: 0; } 
+                div#slider { overflow: hidden; }
+                div#slider figure img { width: 20%; float: left; }
+                div#slider figure { 
+                  position: relative;
+                  width: 500%;
+                  margin: 0;
+                  left: 0;
+                  text-align: left;
+                  font-size: 0;
+                  animation: 30s slidy infinite; 
+                }
+#slider {
+height: 600px;
+width: 100%;
+border: 5px solid gold;
+ text-align: center;
+ background-size: cover;
+}
+#zagolovok {
+text-align: center;
+font-style: normal;
+font-family: 'Times New Roman', Times, serif;
+font-size: xx-large;
+color: gold;
+ }
+ #titleimg {
+width: 350px;
+height: 300px;
+border: 5px solid gold;
+ border-radius: 50%;
+ float: left;
+}
+.column {
+  float: left;
+  width: 33.3;
+  padding: 5px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+button {
+  display: inline-block;
+  background-color: gold;
+  border-radius: 10px;
+  border: 4px double #cccccc;
+  color: #eeeeee;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+hr {
+  border: 6px solid gold;
+  border-bottom: 2px solid blue;
+}
+#annotation {
+  text-decoration: wavy;
+  color: whitesmoke;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: medium;
+}
+.live-search-list {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 1em;
+  background-color: #2c3e50;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  font-family: 'Lato', sans-serif;
+  color: #fff;
+background-color:black;  
+}
+  
+  
+  .live-search-box {
+  width: 100%;
+  display: block;
+  padding: 1em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid gold;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+  }
+  
+  .live-search-list li {
+  list-style: none;
+  padding: 0;
+  margin: 5px 0;
+  }
+li {
+  text-align: center;
+  border: 7px solid gold;
+  text-decoration: wavy;
+  font-size: x-large;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-style: italic;
+}
+  a {
+    color: white;
+    
+  }
